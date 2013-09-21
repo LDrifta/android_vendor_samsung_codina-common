@@ -14,13 +14,6 @@
 
 LOCAL_PATH := $(LOCAL_PATH)
 
-# Prebuilts needed by stock LPM charging mode	
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/bin/factoryreset:system/bin/factoryreset \
-    $(LOCAL_PATH)/proprietary/bin/lpmkey:system/bin/lpmkey \
-    $(LOCAL_PATH)/proprietary/bin/playlpm:system/bin/playlpm \
-    $(LOCAL_PATH)/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
-
 # Camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/camera.montblanc.so:system/lib/hw/camera.montblanc.so \
@@ -65,6 +58,39 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libhalaudioprocessing.so:system/lib/libhalaudioprocessing.so \
     $(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
+
+# Stock charging
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/factoryreset:system/bin/factoryreset \
+     $(LOCAL_PATH)/proprietary/bin/playlpm:system/bin/playlpm \
+     $(LOCAL_PATH)/proprietary/bin/lpmkey:system/bin/lpmkey \
+     $(LOCAL_PATH)/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+     $(LOCAL_PATH)/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+     $(LOCAL_PATH)/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
+     $(LOCAL_PATH)/proprietary/media/bootsamsung.qmg:system/media/bootsamsung.qmg \
+     $(LOCAL_PATH)/proprietary/media/bootsamsungloop.qmg:system/media/bootsamsungloop.qmg \
+     $(LOCAL_PATH)/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
+     $(LOCAL_PATH)/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg
 
 # RIL
 PRODUCT_COPY_FILES += \

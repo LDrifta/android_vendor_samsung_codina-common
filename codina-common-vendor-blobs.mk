@@ -22,19 +22,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/samsung_s5k4ecgx_codina_liteon.dat:system/usr/share/camera/config_file/samsung_s5k4ecgx_codina_liteon.dat \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/siliconfile_sr030pc50_codina_tmo.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50_codina_tmo.dat \
-    $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/siliconfile_sr030pc50.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50.dat \
-    $(LOCAL_PATH)/proprietary/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxaace.so:system/lib/libsomxaace.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxcore.so:system/lib/libsomxcore.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-    $(LOCAL_PATH)/proprietary/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so
+    $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/siliconfile_sr030pc50.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50.dat
 
 # Mali-400
 PRODUCT_COPY_FILES += \
@@ -108,7 +96,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
     $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-    $(LOCAL_PATH)/proprietary/bin/p2p_supplicant:system/bin/p2p_supplicant \
     $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt
 
@@ -202,15 +189,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libstelpcutils.so:system/lib/libstelpcutils.so \
     $(LOCAL_PATH)/proprietary/lib/libsterc.so:system/lib/libsterc.so \
     $(LOCAL_PATH)/proprietary/lib/libtee.so:system/lib/libtee.so \
-    $(LOCAL_PATH)/proprietary/lib/libtrace.so:system/lib/libtrace.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefright_ste_aacdec.so:proprietary/lib/libstagefright_ste_aacdec.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefright_ste_mp3decode.so:proprietary/lib/libstagefright_ste_mp3decode.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefright_soft_ste_aacdec.so:proprietary/lib/libstagefright_soft_ste_aacdec.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefright_soft_ste_mp3dec.so:proprietary/lib/libstagefright_soft_ste_mp3dec.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefright_ste_aacdec.so:system/lib/ste_omxcomponents/libstagefright_ste_aacdec.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefright_ste_mp3decode.so:system/lib/ste_omxcomponents/libstagefright_ste_mp3decode.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefright_soft_ste_aacdec.so:system/lib/ste_omxcomponents/libstagefright_soft_ste_aacdec.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefright_soft_ste_mp3dec.so:system/lib/ste_omxcomponents/libstagefright_soft_ste_mp3dec.so
+    $(LOCAL_PATH)/proprietary/lib/libtrace.so:system/lib/libtrace.so
 
 # System STE Configs
 PRODUCT_COPY_FILES += \
@@ -392,6 +371,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_st/pcmsettings.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_st/pcmsettings.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_st/eventhandler.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_st/eventhandler.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/encoders/streamed/wrapper.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/encoders/streamed/wrapper.elf4nmf \
+    $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/equalizer/effect/libequalizer.elf:system/usr/share/nmf/repository/mmdsp_8500_v2/equalizer/effect/libequalizer.elf \
+    $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/equalizer/effect/libequalizer.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/equalizer/effect/libequalizer.elf4nmf \
+    $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/equalizer/nmfil/effect.elf:system/usr/share/nmf/repository/mmdsp_8500_v2/equalizer/nmfil/effect.elf \
+    $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/equalizer/nmfil/effect.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/equalizer/nmfil/effect.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/encoders/framealigned/wrapper.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/encoders/framealigned/wrapper.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/h264dec/mpc/cabac.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/h264dec/mpc/cabac.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/h264dec/mpc/h264dec.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/h264dec/mpc/h264dec.elf4nmf \
@@ -491,6 +474,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_sk/mpeg2dec/mpc/api/ddep.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_sk/mpeg2dec/mpc/api/ddep.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_sk/setmemory.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_sk/setmemory.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_sk/encoders/streamed/configure.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_sk/encoders/streamed/configure.elf4nmf \
+    $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_sk/equalizer/nmfil/effect/configure.elf:system/usr/share/nmf/repository/mmdsp_8500_v2/_sk/equalizer/nmfil/effect/configure.elf \
+    $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_sk/equalizer/nmfil/effect/configure.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_sk/equalizer/nmfil/effect/configure.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_sk/api/set_debug.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_sk/api/set_debug.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_sk/h264dec/mpc/api/trace_init.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_sk/h264dec/mpc/api/trace_init.elf4nmf \
     $(LOCAL_PATH)/proprietary/usr/share/nmf/repository/mmdsp_8500_v2/_sk/h264dec/mpc/ddep/api/start_codec.elf4nmf:system/usr/share/nmf/repository/mmdsp_8500_v2/_sk/h264dec/mpc/ddep/api/start_codec.elf4nmf \

@@ -18,8 +18,6 @@ LOCAL_PATH := $(LOCAL_PATH)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/camera.montblanc.so:system/lib/hw/camera.montblanc.so \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/aptina_mt9v113.dat:system/usr/share/camera/config_file/aptina_mt9v113.dat \
-    $(LOCAL_PATH)/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    $(LOCAL_PATH)/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/samsung_s5k4ecgx_codina_liteon.dat:system/usr/share/camera/config_file/samsung_s5k4ecgx_codina_liteon.dat \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/siliconfile_sr030pc50_codina_tmo.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50_codina_tmo.dat \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/siliconfile_sr030pc50.dat:system/usr/share/camera/config_file/siliconfile_sr030pc50.dat
@@ -143,9 +141,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/cspsa-server:system/bin/cspsa-server \
     $(LOCAL_PATH)/proprietary/bin/msa:system/bin/msa \
     $(LOCAL_PATH)/proprietary/bin/at_core:system/bin/at_core \
-    $(LOCAL_PATH)/proprietary/bin/ta_loader:system/bin/ta_loader \
-    $(LOCAL_PATH)/proprietary/bin/npsmobex:system/bin/npsmobex \
-    $(LOCAL_PATH)/proprietary/bin/stedump:system/bin/stedump \
     $(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
     $(LOCAL_PATH)/proprietary/bin/modem-supervisor:system/bin/modem-supervisor \
     $(LOCAL_PATH)/proprietary/bin/modem_log_relay:system/bin/modem_log_relay
@@ -175,9 +170,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libspeech_proc_customer_plugin.so:system/lib/libspeech_proc_customer_plugin.so \
     $(LOCAL_PATH)/proprietary/lib/libspeech_processing_ste.so:system/lib/libspeech_processing_ste.so \
     $(LOCAL_PATH)/proprietary/lib/libste_adm.so:system/lib/libste_adm.so \
-    $(LOCAL_PATH)/proprietary/lib/libsoundalive.so:system/lib/libsoundalive.so \
-    $(LOCAL_PATH)/proprietary/lib/libSoundAlive_VSP_ver312a.so:system/lib/libSoundAlive_VSP_ver312a.so \
-    $(LOCAL_PATH)/proprietary/lib/lib_SoundAlive_for_ICS_V01013a.so:system/lib/lib_SoundAlive_for_ICS_V01013a.so \
     $(LOCAL_PATH)/proprietary/lib/libste_audio_hwctrl.so:system/lib/libste_audio_hwctrl.so \
     $(LOCAL_PATH)/proprietary/lib/libste_ens_audio_common.so:system/lib/libste_ens_audio_common.so \
     $(LOCAL_PATH)/proprietary/lib/libste_ens_audio_samplerateconv.so:system/lib/libste_ens_audio_samplerateconv.so \
@@ -197,28 +189,20 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/plmn.latam.list:system/etc/plmn.latam.list \
     $(LOCAL_PATH)/proprietary/etc/plmn.operator.list:system/etc/plmn.operator.list
 
-
-# STE Psdata
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/etc/psdata/stepscc_conf:system/etc/psdata/stepscc_conf \
-    $(LOCAL_PATH)/proprietary/etc/psdata/sterc_conf:system/etc/psdata/sterc_conf \
-    $(LOCAL_PATH)/proprietary/etc/psdata/sterc_conf_alt:system/etc/psdata/sterc_conf_alt \
-    $(LOCAL_PATH)/proprietary/etc/psdata/sterc_script_connect:system/etc/psdata/sterc_script_connect \
-    $(LOCAL_PATH)/proprietary/etc/psdata/sterc_script_connect_alt:system/etc/psdata/sterc_script_connect_alt \
-    $(LOCAL_PATH)/proprietary/etc/psdata/sterc_script_connect_dun:system/etc/psdata/sterc_script_connect_dun \
-    $(LOCAL_PATH)/proprietary/etc/psdata/sterc_script_disconnect:system/etc/psdata/sterc_script_disconnect \
-    $(LOCAL_PATH)/proprietary/etc//psdata/sterc_script_disconnect_dun:system/etc/psdata/sterc_script_disconnect_dun
-
 # OMX
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libnmftimer.so:system/lib/libnmftimer.so \
     $(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:proprietary/lib/libstagefrighthw.so \
-    $(LOCAL_PATH)/proprietary/lib/ppp_sterc.so:system/lib/ppp_sterc.so \
+    $(LOCAL_PATH)/proprietary/lib/libstagefright_soft_ste_mp3dec.so:system/lib/libstagefright_soft_ste_mp3dec.so \
+    $(LOCAL_PATH)/proprietary/lib/libstagefright_ste_mp3decode.so:system/lib/libstagefright_ste_mp3decode.so \
+    $(LOCAL_PATH)/proprietary/lib/libstagefright_soft_ste_aacdec.so:system/lib/libstagefright_soft_ste_aacdec.so \
+    $(LOCAL_PATH)/proprietary/lib/libstagefright_ste_aacdec.so:system/lib/libstagefright_ste_aacdec.so \
     $(LOCAL_PATH)/proprietary/lib/libste_ens_image_tuningdatabase.so:system/lib/libste_ens_image_tuningdatabase.so \
     $(LOCAL_PATH)/proprietary/lib/libste_ens_video_common.so:system/lib/libste_ens_video_common.so \
     $(LOCAL_PATH)/proprietary/lib/libste_ext_ens_image_common.so:system/lib/libste_ext_ens_image_common.so \
     $(LOCAL_PATH)/proprietary/lib/libste_omxil-interface.so:system/lib/libste_omxil-interface.so \
     $(LOCAL_PATH)/proprietary/lib/ste_omxcomponents/libspeech_processing.so:system/lib/ste_omxcomponents/libspeech_processing.so \
+    $(LOCAL_PATH)/proprietary/lib/ste_omxcomponents/libspeech_processing.so:system/lib/libspeech_processing.so \
     $(LOCAL_PATH)/proprietary/lib/ste_omxcomponents/libste_alsasink.so:system/lib/ste_omxcomponents/libste_alsasink.so \
     $(LOCAL_PATH)/proprietary/lib/ste_omxcomponents/libste_alsasource.so:system/lib/ste_omxcomponents/libste_alsasource.so \
     $(LOCAL_PATH)/proprietary/lib/ste_omxcomponents/libste_audio_mixer.so:system/lib/ste_omxcomponents/libste_audio_mixer.so \

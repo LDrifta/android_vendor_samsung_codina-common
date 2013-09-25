@@ -45,39 +45,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
 
-# Stock charging
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/bin/factoryreset:system/bin/factoryreset \
-     $(LOCAL_PATH)/proprietary/bin/playlpm:system/bin/playlpm \
-     $(LOCAL_PATH)/proprietary/bin/lpmkey:system/bin/lpmkey \
-     $(LOCAL_PATH)/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-     $(LOCAL_PATH)/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-     $(LOCAL_PATH)/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
-     $(LOCAL_PATH)/proprietary/media/bootsamsung.qmg:system/media/bootsamsung.qmg \
-     $(LOCAL_PATH)/proprietary/media/bootsamsungloop.qmg:system/media/bootsamsungloop.qmg \
-     $(LOCAL_PATH)/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
-     $(LOCAL_PATH)/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg
-
 # RIL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libril.so:system/lib/libril.so \
@@ -121,8 +88,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libacdapi_azi.so:system/lib/libacdapi_azi.so \
     $(LOCAL_PATH)/proprietary/lib/libalps_sensors_hal.so:system/lib/libalps_sensors_hal.so \
     $(LOCAL_PATH)/proprietary/etc/calib.dat:system/etc/calib.dat \
-    $(LOCAL_PATH)/proprietary/etc/param.dat:system/etc/param.dat \
-    $(LOCAL_PATH)/proprietary/etc/sensors.dat:system/etc/sensors.dat \
     $(LOCAL_PATH)/proprietary/etc/param.dat:system/etc/param.dat
 
 # Security Daemon Modem
@@ -168,7 +133,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libshmnetlnk.so:system/lib/libshmnetlnk.so \
     $(LOCAL_PATH)/proprietary/lib/libsms_server.so:system/lib/libsms_server.so \
     $(LOCAL_PATH)/proprietary/lib/libspeech_proc_customer_plugin.so:system/lib/libspeech_proc_customer_plugin.so \
-    $(LOCAL_PATH)/proprietary/lib/libspeech_processing_ste.so:system/lib/libspeech_processing_ste.so \
     $(LOCAL_PATH)/proprietary/lib/libste_adm.so:system/lib/libste_adm.so \
     $(LOCAL_PATH)/proprietary/lib/libste_audio_hwctrl.so:system/lib/libste_audio_hwctrl.so \
     $(LOCAL_PATH)/proprietary/lib/libste_ens_audio_common.so:system/lib/libste_ens_audio_common.so \

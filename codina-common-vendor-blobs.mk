@@ -15,7 +15,6 @@
 # Camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/camera.montblanc.so:system/lib/hw/camera.montblanc.so \
-    $(LOCAL_PATH)/proprietary/lib/libFFTEm.so:system/lib/libFFTEm.so \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/aptina_mt9v113.dat:system/usr/share/camera/config_file/aptina_mt9v113.dat \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/samsung_s5k4ecgx.dat:system/usr/share/camera/config_file/samsung_s5k4ecgx.dat \
     $(LOCAL_PATH)/proprietary/usr/share/camera/config_file/samsung_s5k4ecgx_codina_liteon.dat:system/usr/share/camera/config_file/samsung_s5k4ecgx_codina_liteon.dat \
@@ -32,14 +31,11 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.DB8520H.so:system/lib/hw/audio.primary.DB8520H.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/audio_policy.DB8520H.so:system/lib/hw/audio_policy.DB8520H.so \
     $(LOCAL_PATH)/proprietary/lib/hw/audio.tms.default.so:system/lib/hw/audio.tms.default.so \
     $(LOCAL_PATH)/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     $(LOCAL_PATH)/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
     $(LOCAL_PATH)/proprietary/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
     $(LOCAL_PATH)/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
-    $(LOCAL_PATH)/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
-    $(LOCAL_PATH)/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
     $(LOCAL_PATH)/proprietary/lib/libhalaudioprocessing.so:system/lib/libhalaudioprocessing.so \
     $(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
 

@@ -29,6 +29,20 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libMali.so:system/lib/libMali.so \
     $(LOCAL_PATH)/proprietary/lib/libUMP.so:system/lib/libUMP.so
 
+
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.DB8520H.so:system/lib/hw/audio.primary.DB8520H.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.tms.default.so:system/lib/hw/audio.tms.default.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
+    $(LOCAL_PATH)/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
+    $(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
+    $(LOCAL_PATH)/proprietary/lib/lib_SoundAlive_for_ICS_V01013a.so:system/lib/lib_SoundAlive_for_ICS_V01013a.so \
+    $(LOCAL_PATH)/proprietary/lib/libhalaudioprocessing.so:system/lib/libhalaudioprocessing.so \
+    $(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
+
 # RIL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libril.so:system/lib/libril.so \

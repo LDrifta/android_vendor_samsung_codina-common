@@ -51,14 +51,22 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/bin/bcm4334.hcd:system/bin/bcm4334.hcd
+    $(LOCAL_PATH)/proprietary/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
+    $(LOCAL_PATH)/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
+    $(LOCAL_PATH)/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd
 
 # Wifi
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
-    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
-    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
+    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_apsta.bin_b2:system/etc/wifi/bcmdhd_apsta.bin_b2 \
+    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_mfg.bin_b2:system/etc/wifi/bcmdhd_mfg.bin_b2 \
+    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_p2p.bin_b2:system/etc/wifi/bcmdhd_p2p.bin_b2 \
+    $(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_sta.bin_b2:system/etc/wifi/bcmdhd_sta.bin_b2 \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_mfg.txt_semcosh:system/etc/wifi/nvram_mfg.txt_semcosh \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
+    $(LOCAL_PATH)/proprietary/etc/wifi/nvram_net.txt_semcosh:system/etc/wifi/nvram_net.txt_semcosh \
+    $(LOCAL_PATH)/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # Display
 PRODUCT_COPY_FILES += \
@@ -138,6 +146,35 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/plmn.latam.list:system/etc/plmn.latam.list \
     $(LOCAL_PATH)/proprietary/etc/plmn.operator.list:system/etc/plmn.operator.list
+
+# Firmware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_0200_0000_patch.fw:system/etc/firmware/CG29XX_0200_0000_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_0200_0000_settings.fw:system/etc/firmware/CG29XX_0200_0000_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_0700_0011_patch.fw:system/etc/firmware/CG29XX_0700_0011_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_0700_0011_settings.fw:system/etc/firmware/CG29XX_0700_0011_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_0700_0013_patch.fw:system/etc/firmware/CG29XX_0700_0013_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_0700_0013_settings.fw:system/etc/firmware/CG29XX_0700_0013_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1004_0411_patch.fw:system/etc/firmware/CG29XX_1004_0411_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1004_0411_settings.fw:system/etc/firmware/CG29XX_1004_0411_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1005_0C11_patch.fw:system/etc/firmware/CG29XX_1005_0C11_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1005_0C11_settings.fw:system/etc/firmware/CG29XX_1005_0C11_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1005_0411_patch.fw:system/etc/firmware/CG29XX_1005_0411_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1005_0411_settings.fw:system/etc/firmware/CG29XX_1005_0411_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1005_0811_patch.fw:system/etc/firmware/CG29XX_1005_0811_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1005_0811_settings.fw:system/etc/firmware/CG29XX_1005_0811_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1805_0C11_patch.fw:system/etc/firmware/CG29XX_1805_0C11_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1805_0C11_settings.fw:system/etc/firmware/CG29XX_1805_0C11_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1805_0411_patch.fw:system/etc/firmware/CG29XX_1805_0411_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1805_0411_settings.fw:system/etc/firmware/CG29XX_1805_0411_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1805_0811_patch.fw:system/etc/firmware/CG29XX_1805_0811_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1805_0811_settings.fw:system/etc/firmware/CG29XX_1805_0811_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1806_1021_patch.fw:system/etc/firmware/CG29XX_1806_1021_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/CG29XX_1806_1021_settings.fw:system/etc/firmware/CG29XX_1806_1021_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/STLC2690_0603_0014_patch.fw:system/etc/firmware/STLC2690_0603_0014_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/STLC2690_0603_0014_settings.fw:system/etc/firmware/STLC2690_0603_0014_settings.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/STLC2690_0604_001D_patch.fw:system/etc/firmware/STLC2690_0604_001D_patch.fw \
+    $(LOCAL_PATH)/proprietary/etc/firmware/STLC2690_0604_001D_settings.fw:system/etc/firmware/STLC2690_0604_001D_settings.fw
 
 # OMX
 PRODUCT_COPY_FILES += \

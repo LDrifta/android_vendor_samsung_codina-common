@@ -15,7 +15,7 @@ xtalfreq=37400
 nocrc=1
 ag0=252
 aa2g=1
-ccode=GB
+ccode=ALL
 pa0itssit=0x20
 
 #PA parameters for 2.4GHz_0327
@@ -56,10 +56,10 @@ tssifloor5gh=18
 PwrOffset40mhz5g=4
 rxpo5g=0
 
-maxp2ga0=79
-ofdm2gpo=0x64422222
-mcs2gpo0=0x9777
-mcs2gpo1=0xbb99
+maxp2ga0=73
+ofdm2gpo=0x75533111
+mcs2gpo0=0x6444
+mcs2gpo1=0x8866
 cckdigfilttype=24
 ofdmdigfilttype2g=9
 ofdmdigfilttype5g=3
@@ -148,10 +148,10 @@ dlorange_lowlimit=5
 loflag=1
 
 # In RC58.29, for RSSI return with pkteng_stats
-#rssicorrnorm=3
-#rssicorratten=3
-#rssicorrnorm5g=5,3,3
-#rssicorratten5g=5,3,3
+rssicorrnorm=3
+rssicorratten=3
+rssicorrnorm5g=5,3,3
+rssicorratten5g=5,3,3
 
 #for BT-coexistence
 btc_params80=0
